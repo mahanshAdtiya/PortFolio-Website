@@ -13,19 +13,30 @@ const Hero = () => {
       >
         <div className='flex flex-col justify-center items-center mt-5'>
 
-          <div className='w-5 h-5 rounded-full bg-[#960000]' />
-          <div className='w-1 sm:h-80 h-40 red-gradient' />
+          {/* <div className='w-5 h-5 rounded-full bg-[#960000]' /> */}
+          {/* <div className='w-1 sm:h-80 h-40 red-gradient' /> */}
 
         </div>
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#e23b3b]'>Mahansh</span>
-          </h1>
-          <p className={`text-lg text-red-100 sm:text-xl lg:text-2xl leading-relaxed sm:leading-loose ${styles.heroSubText} mt-2 text-white-100`}>
+        <div className='w-full text-center h-[60vh] flex justify-center items-center flex-col'>
+          <div >
+            <p className={`${styles.heroHeadText} text-left`}>
+              Heyy, I'm 
+            </p>
+            <div className='flex justify-center w-full items-center flex-col'>
+              <p className='text-white w-full text-4xl md:text-8xl uppercase tracking-widest'>
+                Mahansh Aditya
+              </p>
+              <h2 className=' text-3xl md:text-[30px] text-gray-400 font-thin'>
+              Full-Stack Developer | Designer 
+              </h2>
+            </div>
+          </div>
+
+          {/* <p className={`text-lg text-red-100 sm:text-xl lg:text-2xl leading-relaxed sm:leading-loose ${styles.heroSubText} mt-2 text-white-100`}>
             I am a sophomore Computer Science and Design student at IIIT-Delhi <br className='sm:block hidden' />
             My passion lies in software development, and I aspire to become a full stack developer.
-          </p>
+          </p> */}
 
         </div>
 

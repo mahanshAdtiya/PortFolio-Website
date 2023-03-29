@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
+    fontFamily: {
+      'monsterat': ['Monsterat'],
+    },
     extend: {
       colors: {
         primary: "#050816",

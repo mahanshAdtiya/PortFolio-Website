@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -27,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${ styles.paddingX } w-full flex items-center py-5 fixed top-0 z-20 ${ scrolled ? "bg-primary" : "bg-transparent"}`} >
+      className={`${ styles.paddingX } w-full flex items-center py-5 fixed top-0 z-20 ${ scrolled ? "bg-black" : "bg-transparent"}`} >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
@@ -47,15 +46,17 @@ const Navbar = () => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
+          {navLinks.map((nav,index) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-red-500"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-red-300 text-[18px] font-medium cursor-pointer transition-all`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+            <div class="group"> <a href={`#${nav.id}`} className="group-hover:opacity-100"> <span className="text-white opacity-100 group-hover:text-red-300">0{index+1}. </span>{nav.title} </a> </div>
+
+            {/* <div class="group"> <a href={`#${nav.id}`} class="group-hover:opacity-100"> <span class="text-white opacity-100 group-hover:opacity-0">0{index+1}. </span>{nav.title} </a> </div> */}
             </li>
           ))}
         </ul>

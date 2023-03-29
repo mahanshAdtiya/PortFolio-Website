@@ -1,7 +1,6 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
     typescript,
@@ -19,9 +18,9 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    tankStar,
+    bingeHub,
+    mshCustomShell,
     threejs,
   } from "../assets";
   
@@ -200,67 +199,50 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "BingeHub",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An API based project, which helps you in keeping a track of all the movies,shoes and animes you have watched, want's to watch, your favourites and many more features.",
       tags: [
         {
           name: "react",
-          color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Node.js",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: bingeHub,
+      source_code_link: "https://github.com/mahanshAdtiya/BingeHub.git",
     },
     {
-      name: "Job IT",
+      name: "msh-custom shell",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "It's a custom shell made by me in C language which runs all the basic commands of linux and also use emoticons to give a sense of friendly enviornment",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "C-Language",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "Linux",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: mshCustomShell,
+      source_code_link: "https://github.com/mahanshAdtiya/Msh-Custom-Shell.git",
     },
     {
-      name: "Trip Guide",
+      name: "Tank-Start",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A game called Tanks stars which is a player versus player experience. In creating this game, we utilized object-oriented programming concepts and applied design principles utilizing the Libgdx library.",
       tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
+          name: "Java-Language",
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
+          name: "Libgdx Library",
         },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
+        
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: tankStar,
+      source_code_link: "https://github.com/AaravBalachandran/Game.git",
     },
   ];
   
