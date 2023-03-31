@@ -29,10 +29,10 @@ import {
       id: "about",
       title: "About",
     },
-    {
-      id: "experience",
-      title: "Experience",
-    },
+    // {
+    //   id: "experience",
+    //   title: "Experience",
+    // },
     {
       id: "project",
       title: "Work",

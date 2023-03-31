@@ -7,6 +7,8 @@ import Experience from './Experience';
 import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import LeftCol from './LeftCol';
+import RightCol from './RightCol';
 
 export {
   Hero,
@@ -17,6 +19,8 @@ export {
   Works,
   Feedbacks,
   Contact,
+  LeftCol,
+  RightCol,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 

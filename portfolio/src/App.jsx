@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, LeftCol,RightCol } from "./components";
 import Floating_objects from "./Floating_objects"
 
 const App = () => {
@@ -16,7 +16,10 @@ const App = () => {
         <About/>
         {/* <Experience/> */}
         <Works/>
-        {/* <Contact/> */}
+        <Contact/>
+        <LeftCol className="fixed bottom-0 left-0" />
+        <RightCol className="fixed bottom-0 right-0" />
+
       </div>
 
     </BrowserRouter>
