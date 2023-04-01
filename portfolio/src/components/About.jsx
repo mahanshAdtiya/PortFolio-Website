@@ -46,6 +46,12 @@ const About = () => {
 
       <h2 className={styles.sectionHeadText} >
         Overview </h2>
+      {/* <div class="h-0.5 bg-gray-300 bg-opacity-20 w-1/2 mr-8 rounded-sm"></div> */}
+      {/* <div style={{ display: 'flex', alignItems: 'center' }}>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <div class="h-0.5 bg-gray-300 bg-opacity-20 w-1/2 ml-4 rounded-sm"></div>
+      </div> */}
+
 
     </motion.div>
 
@@ -58,13 +64,13 @@ const About = () => {
     <motion.p 
         variants={fadeIn("", "", 0.2, 1)}
         className="mt-4 text-red-50 text-[17px] max-w-3xl leading-[30px] mb-8">
-        I have experience in programming languages such as Java, Python, C, C++ , MSQL and JavaScript, and I enjoy working on UI/UX design using tools like Adobe XD and Figma. Although I have not yet participated in hackathons or coding competitions, I am constantly working on personal projects to improve my abilities and expand my knowledge. I am a detail-oriented individual with excellent communication skills and enjoy collaborating with others on group projects. I am excited to continue developing my skills and pursuing opportunities in the software development field.
+        I have experience in programming languages such as Java, Python, C, C++ , MSQL and JavaScript. Although I have not yet participated in hackathons or coding competitions, I am constantly working on personal projects to improve my abilities and expand my knowledge.
       </motion.p>
 
       <motion.p 
         variants={fadeIn("", "", 0.2, 1)}
         className="mt-4 text-red-50 text-[17px] max-w-3xl leading-[30px] mb-8">
-          I am a detail-oriented individual with excellent communication skills and enjoy collaborating with others on group projects. I am excited to continue developing my skills and pursuing opportunities in the software development field.
+          I am a detail-oriented individual and enjoy collaborating with others on group projects. I am excited to continue developing my skills and pursuing opportunities in the software development field.
       </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>

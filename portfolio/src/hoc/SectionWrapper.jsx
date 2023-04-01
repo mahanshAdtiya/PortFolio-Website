@@ -1,5 +1,4 @@
 import {motion} from 'framer-motion';
-
 import {styles} from '../styles';
 import {staggerContainer} from '../utils/motion';
 
@@ -14,7 +13,7 @@ const SectionWrapper = (Component, idname) =>
           className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
 
             <span className='hash-span' id={idname}>
-              &nbsp;
+              {/* &nbsp; */}
             </span>
             <Component/>
         </motion.section>

@@ -1,6 +1,9 @@
-import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, LeftCol,RightCol } from "./components";
-import Floating_objects from "./Floating_objects"
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, LeftCol, RightCol } from './components';
+import Floating_objects from './Floating_objects';
+
+import { Col, Row } from 'react-bootstrap';
 
 const App = () => {
   return (
@@ -13,12 +16,21 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About/>
-        {/* <Experience/> */}
-        <Works/>
-        <Contact/>
-        <LeftCol className="fixed bottom-0 left-0" />
-        <RightCol className="fixed bottom-0 right-0" />
+        <Row>
+          <Col md={3}>
+            <LeftCol />
+          </Col>
+          <Col md={9}>
+            <About/>
+            {/* <Experience/> */}
+            <Tech/>
+            <Works/>
+            <Contact/>
+          </Col>
+          <Col md={3}>
+            <RightCol />
+          </Col>
+        </Row>
 
       </div>
 

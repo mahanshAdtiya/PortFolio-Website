@@ -1,6 +1,7 @@
 import {motion} from 'framer-motion';
 import {styles} from '../styles'
 // import { ComputersCanvas } from './canvas';
+import Spline from '@splinetool/react-spline';
 
 import {fadeIn, textVariant} from '../utils/motion'
 
@@ -8,17 +9,19 @@ const Hero = () => {
   return (
    
     <section className={`relative w-full h-screen mx-auto`}>
-
         <motion.div
           initial={{ x: -70 }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
+          variants={textVariant()}
           className={`absolute inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
         >
 
         <div
           className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
         >
+        {/* <Spline scene="https://prod.spline.design/DXG1uqOQrxaVTOTD/scene.splinecode" /> */}
+
           <div className='flex flex-col justify-center items-center mt-5'>
 
             {/* <div className='w-5 h-5 rounded-full bg-[#960000]' /> */}
@@ -26,7 +29,7 @@ const Hero = () => {
 
           </div>
 
-          <div className='w-full text-center h-[60vh] flex justify-center items-center flex-col'>
+          <div className='  w-full text-center h-[60vh] flex justify-center items-center flex-col'>
             <div >
               <p className={`${styles.heroHeadText} text-left`}>
                 Hi, I'm 
@@ -40,8 +43,6 @@ const Hero = () => {
                 </h2>
               </div>
             </div>
-
-
           </div>
 
         </div>
