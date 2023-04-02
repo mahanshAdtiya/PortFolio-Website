@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, LeftCol, RightCol } from './components';
+import { About, Contact, Hero, Navbar, Tech, Works, LeftCol, RightCol } from './components';
 import Floating_objects from './Floating_objects';
 
 import { Col, Row } from 'react-bootstrap';
