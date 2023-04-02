@@ -9,7 +9,7 @@ const Tech = () => {
         <Table borderless responsive="sm" className='text-2xl'>
             <tbody>
 
-                <tr>
+                <tr className='flex flex-col md:table'>
                     <td className="px-6 py-4">
                         <span className="flex items-center">
                             <i className="fab fa-js-square mr-2 text-red-500"></i>
@@ -37,7 +37,7 @@ const Tech = () => {
 
                 </tr>
 
-                <tr>
+                <tr className='flex flex-col md:table' >
                     <td className="px-6 py-4">
                         <span className="flex items-center">
                             <i className="fab fa-react mr-2 text-red-500"></i>
@@ -65,7 +65,7 @@ const Tech = () => {
 
                 </tr>
 
-                <tr>
+                <tr className='flex flex-col md:table'>
                     <td className="px-6 py-4">
                         <span className="flex items-center">
                             <i className="fab fa-python mr-2 text-red-500"></i>

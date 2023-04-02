@@ -68,7 +68,7 @@ const Navbar = () => {
 
         <ul className=' list-none hidden sm:flex flex-row gap-10 items-center translate-x-24'>
           {navLinks.map((nav,index) => (
-            <li
+            nav.title !="resume" ? (<li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-red-500"
@@ -78,12 +78,15 @@ const Navbar = () => {
             <div className="group"> <a href={`#${nav.id}`} className="group-hover:opacity-100"> <span className="text-white opacity-100 group-hover:text-red-500">0{index+1}. </span>{nav.title} </a> </div>
 
             {/* <div class="group"> <a href={`#${nav.id}`} class="group-hover:opacity-100"> <span class="text-white opacity-100 group-hover:opacity-0">0{index+1}. </span>{nav.title} </a> </div> */}
-            </li>
-          ))}
-          <li><a 
+              </li>) : <li>
+            <a 
             href="../assets/2021334_Mahansh"
             download="Mahansh_Aditya_Resume.pdf"      
-            className="text-red-500 border-2 border-red-500 rounded-lg px-2 py-1 hover:text-red-300  hover:cursor-pointer transition-all" >Resume</a></li>
+            className="text-red-500 border-2 border-red-500 rounded-lg px-2 py-1 hover:text-red-300  hover:cursor-pointer transition-all" >Resume
+            </a>
+            </li>
+          ))}
+
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>

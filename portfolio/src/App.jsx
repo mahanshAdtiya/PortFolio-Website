@@ -16,21 +16,17 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <Row>
-          <Col md={3}>
-            <LeftCol />
-          </Col>
-          <Col md={9}>
-            <About/>
-            {/* <Experience/> */}
-            <Tech/>
-            <Works/>
-            <Contact/>
-          </Col>
-          <Col md={3}>
-            <RightCol />
-          </Col>
-        </Row>
+
+        <LeftCol className= 'hidden md:flex fixed bottom-0 left-16' />
+
+        <About />
+        {/* <Experience/> */}
+        <Tech />
+        <Works />
+        <Contact />
+
+        <RightCol className='hidden md:flex fixed bottom-52 -right-14' />
+
 
       </div>
 
